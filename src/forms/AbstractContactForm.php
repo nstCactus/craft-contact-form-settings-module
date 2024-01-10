@@ -7,7 +7,7 @@ use craft\contactform\models\Submission;
 use craft\contactform\Plugin as ContactFormPlugin;
 use craft\errors\MissingComponentException;
 use hybridinteractive\contactformextensions\ContactFormExtensions as ContactFormExtensionsPlugin;
-use modules\contactFormSettings\ContactFormSettingsModule;
+use nstcactus\craftcms\modules\contactFormSettings\ContactFormSettingsModule;
 use yii\base\Component;
 use yii\base\Event;
 use yii\base\ModelEvent;
