@@ -1,0 +1,20 @@
+{
+    "name": "nstcactus/craft-contact-form-settings-module",
+    "description": "A Craft module to manage multiple contact forms using the contact-form & contact-form-extensions plugins",
+    "type": "craft-module",
+    "require": {
+        "nstcactus/craft-utils": "^3.1.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "nstcactus\\craftcms\\modules\\contactFormSettings\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "nstCactus",
+            "email": "nstCactus@gmail.com"
+        }
+    ]
+}
