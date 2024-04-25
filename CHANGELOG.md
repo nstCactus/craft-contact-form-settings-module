@@ -7,9 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+
+[1.1.0] - 2024-04-25
+
 ### Added
 
 - Add Craft 5 compatibility
+- Make the contact-form-extensions plugin optional
+
+### Fixed
+
+- Improve the error shown when the contact-form plugin isn't installed 
 
 
 ## [1.0.1] - 2024-01-10
@@ -23,6 +31,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 First release
 
-[Unreleased]: https://github.com/nstCactus/craft-contact-form-settings-module/compare/1.0.1...main
+[Unreleased]: https://github.com/nstCactus/craft-contact-form-settings-module/compare/1.1.0...main
+[1.1.0]: https://github.com/nstCactus/craft-contact-form-settings-module/compare/1.0.1...1.1.0
 [1.0.1]: https://github.com/nstCactus/craft-contact-form-settings-module/compare/1.0.0...1.0.1
 [1.0.0]: https://github.com/nstCactus/craft-contact-form-settings-module/releases/tag/1.0.0
