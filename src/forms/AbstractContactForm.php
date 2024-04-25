@@ -37,13 +37,12 @@ abstract class AbstractContactForm extends Component
      */
     public function overrideContactFormPluginConfiguration(): void
     {
-        $contactFormPlugin = ContactFormPlugin::getInstance();
-        if (!$contactFormPlugin) {
+        if (!class_exists(ContactFormPlugin::class)) {
             throw new MissingComponentException('The required contact-form plugin isn\'t loaded.');
         }
 
+        $contactFormPlugin = ContactFormPlugin::getInstance();
         $settings = $contactFormPlugin->getSettings()->toArray();
-
         $contactFormPlugin->setSettings($this->getContactFormConfiguration($settings));
     }
 
@@ -54,13 +53,14 @@ abstract class AbstractContactForm extends Component
      */
     public function overrideContactFormExtensionsPluginConfiguration(): void
     {
-        $contactFormExtensionsPlugin = ContactFormExtensionsPlugin::getInstance();
-        if (!$contactFormExtensionsPlugin) {
-            throw new MissingComponentException('The required contact-form-extensions plugin isn\'t loaded.');
+        if (!class_exists(ContactFormExtensionsPlugin::class)) {
+            Craft::warning('The contact-form-extensions plugin isn\'t loaded. Some features might not work as expected.');
+
+            return;
         }
 
+        $contactFormExtensionsPlugin = ContactFormExtensionsPlugin::getInstance();
         $settings = $contactFormExtensionsPlugin->getSettings()->toArray();
-
         $contactFormExtensionsPlugin->setSettings($this->getContactFormExtensionsConfiguration($settings));
     }
 
