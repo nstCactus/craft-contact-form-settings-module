@@ -1,4 +1,4 @@
-# ContactFormSettings module for Craft CMS 3.x
+# ContactFormSettings module for Craft CMS
 
 This module helps to manage multiple sets of settings form the Craft `contact-form` & `contact-form-extensions` plugins.
 
@@ -8,33 +8,33 @@ This module helps to manage multiple sets of settings form the Craft `contact-fo
 This module requires:
 
 - PHP 7.1 or later
-- Craft CMS 3.4 or later
+- Craft CMS 3, 4 or 5
 - contact-form plugin 2.2 or later
-- contact-form-extensions plugin 1.2.1 or later
+- [optional] contact-form-extensions plugin 1.2.1 or later
 
 
 ## Installation
 
-To install the module, follow these instructions.
+1. Install the composer module : `composer require nstcactus/craft-contact-form-settings-module`
 
-First, you'll need to add the contents of the `app.php` file to your `config/app.php` (or just copy it there if it does
-not exist). This ensures that your module will get loaded for each request.
+2. Add the contents of the `app.php` file to your `config/app.php` (or just copy it there if it does
+   not exist). This ensures that your module will get loaded for each request.
 
-The file might look something like this:
+   The file might look something like this:
 
-```php
-return [
-    'modules' => [
-        'contact-form-settings-module' => [
-            'class' => \nstcactus\craftcms\modules\contactFormSettings\ContactFormSettingsModule::class,
-            'components' => [
-                // More on this below
-            ],
-        ],
-    ],
-    'bootstrap' => ['contact-form-settings-module'],
-];
-```
+   ```php
+   return [
+       'modules' => [
+           'contact-form-settings-module' => [
+               'class' => \nstcactus\craftcms\modules\contactFormSettings\ContactFormSettingsModule::class,
+               'components' => [
+                   // More on this below
+               ],
+           ],
+       ],
+       'bootstrap' => ['contact-form-settings-module'],
+   ];
+   ```
 
 ## Add a form
 
@@ -42,7 +42,7 @@ return [
 This class will describe the settings of your form.
 
 2. Register this form class in the `config/app.php` file: add an entry in the `components` array of the module where the
-   key is the form name and the value is a reference to the form class.
+   key is the form name and the value is a reference to the form class. 
 
    Example:
 
@@ -52,7 +52,7 @@ This class will describe the settings of your form.
             'contact-form-settings-module' => [
                 'class' => \nstcactus\craftcms\modules\contactFormSettings\ContactFormSettingsModule::class,
                 'components' => [
-                    'contact' => \modules\app\forms\ContactForm::class,
+                    'contact' => \project\modules\app\forms\ContactForm::class,
                 ],
             ],
         ],
