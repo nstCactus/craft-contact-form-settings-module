@@ -3,7 +3,7 @@
     "description": "A Craft module to manage multiple contact forms using the contact-form & contact-form-extensions plugins",
     "type": "craft-module",
     "require": {
-        "nstcactus/craft-utils": "^3.1.0 || ^4.0.0"
+        "nstcactus/craft-utils": ">= 5.0.0"
     },
     "license": "MIT",
     "autoload": {

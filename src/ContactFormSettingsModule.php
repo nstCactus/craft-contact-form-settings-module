@@ -42,7 +42,7 @@ class ContactFormSettingsModule extends AbstractModule
         }
     }
 
-    protected function getTwigExtensions(): ?array
+    protected function getTwigExtensions(): array
     {
         return [
             new Extension(),
