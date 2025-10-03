@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+
+[2.0.0] - 2022-10-03
+
 ### Changed
 
 - Add support for [nstcactus/craft-utils] 5
@@ -36,7 +39,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 First release
 
-[Unreleased]: https://github.com/nstCactus/craft-contact-form-settings-module/compare/1.1.0...main
+[Unreleased]: https://github.com/nstCactus/craft-contact-form-settings-module/compare/2.0.0...main
+[2.0.0]: https://github.com/nstCactus/craft-contact-form-settings-module/compare/1.1.0...2.0.0
 [1.1.0]: https://github.com/nstCactus/craft-contact-form-settings-module/compare/1.0.1...1.1.0
 [1.0.1]: https://github.com/nstCactus/craft-contact-form-settings-module/compare/1.0.0...1.0.1
 [1.0.0]: https://github.com/nstCactus/craft-contact-form-settings-module/releases/tag/1.0.0
